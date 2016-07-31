@@ -1,0 +1,26 @@
+{
+  "name": "learn-bootstrap-sass",
+  "version": "1.0.0",
+  "description": "Learn how to develop frontend css using sass with bootstrap as a boilerplate",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kukuhsain/learn-bootstrap-sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kukuhsain/learn-bootstrap-sass/issues"
+  },
+  "homepage": "https://github.com/kukuhsain/learn-bootstrap-sass#readme"
+}
