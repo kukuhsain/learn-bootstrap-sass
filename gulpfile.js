@@ -7,6 +7,10 @@ gulp.task('styles', function(){
 		.pipe(gulp.dest('./css/'))
 });
 
+/*gulp.task('bootstrap', function(){
+	gulp.src('')
+})*/
+
 gulp.task('default', function(){
 	gulp.watch('sass/**/*.scss', ['styles']);
 });
