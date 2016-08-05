@@ -1,0 +1,58 @@
+//
+// Cards
+// --------------------------------------------------
+
+$card-padding: $panel-body-padding;
+$card-bg: $panel-bg;
+$card-border: $panel-inner-border;
+$card-border-radius: $panel-border-radius;
+
+$card-caption-padding: $thumbnail-caption-padding;
+$card-caption-color: $thumbnail-caption-color;
+
+
+// Mixin and adjust the regular image class
+.card {
+  display: block;
+  padding: $card-padding;
+  margin-bottom: $line-height-computed;
+  line-height: $line-height-base;
+  background-color: $card-bg;
+  border-radius: $card-border-radius;
+  border: none;
+  border-radius: 2px;
+  @include box-shadow(0 1px 4px rgba(0,0,0,.3));
+
+  >card-head {
+    padding-bottom: $card-padding;
+
+    >photo {
+      display: block;
+    }
+    >title {
+      display: table-cell;
+      padding-left: $card-padding;
+    }
+    >desc {
+      display: table-cell;
+      padding-left: $card-padding;
+    }
+  }
+
+  >card-body {
+    > img,
+    a > img {
+      @include img-responsive;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    // [converter] extracted a&:hover, a&:focus, a&.active to a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active
+
+    // Image captions
+    .caption {
+      padding: $thumbnail-caption-padding;
+      color: $thumbnail-caption-color;
+    }
+  }
+}

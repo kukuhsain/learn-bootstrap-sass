@@ -6525,3 +6525,35 @@ input[type="checkbox"],
 
 .carousel-caption h1, .carousel-caption h2, .carousel-caption h3, .carousel-caption h4, .carousel-caption h5, .carousel-caption h6 {
   color: inherit; }
+
+.card {
+  display: block;
+  padding: 15px;
+  margin-bottom: 23px;
+  line-height: 1.846;
+  background-color: #fff;
+  border-radius: 3px;
+  border: none;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); }
+  .card > card-head {
+    padding-bottom: 15px; }
+    .card > card-head > photo {
+      display: block; }
+    .card > card-head > title {
+      display: table-cell;
+      padding-left: 15px; }
+    .card > card-head > desc {
+      display: table-cell;
+      padding-left: 15px; }
+  .card > card-body > img,
+  .card > card-body a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; }
+  .card > card-body .caption {
+    padding: 9px;
+    color: #666; }
