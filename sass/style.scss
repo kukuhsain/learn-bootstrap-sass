@@ -1,3 +1,4 @@
-body {
-	background-color: #fff;
-}
+@import "custom-variables";
+@import "paper-variables";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "paper-bootswatch";
