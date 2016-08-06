@@ -23,23 +23,40 @@ $card-caption-color: $thumbnail-caption-color;
   border-radius: 2px;
   @include box-shadow(0 1px 4px rgba(0,0,0,.3));
 
-  >card-head {
+  >.card-head {
     padding-bottom: $card-padding;
 
-    >photo {
-      display: block;
-    }
-    >title {
+    >.person-photo {
       display: table-cell;
-      padding-left: $card-padding;
+      // float: left;
+      // vertical-align: top;
+
+      >img {
+        display: block;
+      }
     }
-    >desc {
+
+    >.person-info {
       display: table-cell;
-      padding-left: $card-padding;
+      vertical-align: top;
+      width: 100%;
+      >.title {
+        padding-left: $card-padding;
+      }
+      >.desc {
+        padding-left: $card-padding;
+      }
     }
+
+    >.person-action {
+      display: table-cell;
+      vertical-align: top;
+      // float: right;
+    }
+
   }
 
-  >card-body {
+  >.card-body {
     > img,
     a > img {
       @include img-responsive;
