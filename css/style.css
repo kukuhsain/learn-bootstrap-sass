@@ -6538,22 +6538,31 @@ input[type="checkbox"],
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); }
   .card > .card-head {
-    padding-bottom: 15px; }
+    width: 100%;
+    padding: 5px; }
     .card > .card-head > .person-photo {
-      display: table-cell; }
+      display: inline-block;
+      overflow: hidden;
+      border-radius: 50%;
+      position: relative;
+      width: 50px;
+      height: 50px; }
       .card > .card-head > .person-photo > img {
-        display: block; }
+        display: block;
+        margin: auto;
+        max-width: 100%; }
     .card > .card-head > .person-info {
-      display: table-cell;
-      vertical-align: top;
-      width: 100%; }
+      display: inline-block;
+      vertical-align: top; }
       .card > .card-head > .person-info > .title {
-        padding-left: 15px; }
+        padding-left: 15px;
+        margin: 0; }
       .card > .card-head > .person-info > .desc {
         padding-left: 15px; }
     .card > .card-head > .person-action {
-      display: table-cell;
-      vertical-align: top; }
+      display: inline-block;
+      vertical-align: top;
+      float: right; }
   .card > .card-body > img,
   .card > .card-body a > img {
     display: block;
@@ -6562,5 +6571,5 @@ input[type="checkbox"],
     margin-left: auto;
     margin-right: auto; }
   .card > .card-body .caption {
-    padding: 9px;
+    padding: 5px;
     color: #666; }

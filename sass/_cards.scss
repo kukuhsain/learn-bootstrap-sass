@@ -3,6 +3,7 @@
 // --------------------------------------------------
 
 $card-padding: $panel-body-padding;
+$card-inner-padding: 5px;
 $card-bg: $panel-bg;
 $card-border: $panel-inner-border;
 $card-border-radius: $panel-border-radius;
@@ -24,24 +25,33 @@ $card-caption-color: $thumbnail-caption-color;
   @include box-shadow(0 1px 4px rgba(0,0,0,.3));
 
   >.card-head {
-    padding-bottom: $card-padding;
+    width: 100%;
+    padding: $card-inner-padding;
+    // padding-bottom: $card-padding;
 
     >.person-photo {
-      display: table-cell;
+      display: inline-block;
+      overflow: hidden;
+      border-radius: 50%;
+      position: relative;
+      width: 50px;
+      height: 50px;
       // float: left;
       // vertical-align: top;
 
       >img {
         display: block;
+        margin: auto;
+        max-width: 100%;
       }
     }
 
     >.person-info {
-      display: table-cell;
+      display: inline-block;
       vertical-align: top;
-      width: 100%;
       >.title {
         padding-left: $card-padding;
+        margin: 0;
       }
       >.desc {
         padding-left: $card-padding;
@@ -49,9 +59,10 @@ $card-caption-color: $thumbnail-caption-color;
     }
 
     >.person-action {
-      display: table-cell;
+      display: inline-block;
       vertical-align: top;
-      // float: right;
+      // text-align: right;
+      float: right;
     }
 
   }
@@ -68,7 +79,7 @@ $card-caption-color: $thumbnail-caption-color;
 
     // Image captions
     .caption {
-      padding: $thumbnail-caption-padding;
+      padding: $card-inner-padding;
       color: $thumbnail-caption-color;
     }
   }
